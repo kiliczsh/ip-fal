@@ -1,0 +1,31 @@
+{
+  "name": "ip-fal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A geo-aware IP page powered by Cloudflare Workers and fal.ai",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "npm run typecheck && npm test && wrangler deploy --dry-run",
+    "deploy": "wrangler deploy",
+    "deploy:production": "wrangler deploy --config wrangler.production.jsonc",
+    "dev": "wrangler dev",
+    "preview": "node scripts/preview-location.mjs",
+    "preview:live": "node scripts/preview-location.mjs istanbul --live",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "types": "wrangler types"
+  },
+  "dependencies": {
+    "@fal-ai/client": "^1.6.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260828.1",
+    "typescript": "5.7.2",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.127.1"
+  }
+}

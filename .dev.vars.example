@@ -1,0 +1,8 @@
+# Required only for real fal.ai generation.
+FAL_KEY=your_fal_api_key
+
+# Any long, random value is suitable for local live generation.
+GENERATION_SIGNING_KEY=replace_with_a_random_secret
+
+# Optional. Leave unset to disable Cloudflare Web Analytics locally.
+# WEB_ANALYTICS_TOKEN=your_public_web_analytics_token
