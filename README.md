@@ -1,4 +1,4 @@
-# ip/fal
+# ip/fal — neyse halin çıksın ip'in
 
 An open-source, geo-aware IP page powered by Cloudflare Workers and fal.ai.
 Each visitor sees the public IP used for the current connection, Cloudflare's
